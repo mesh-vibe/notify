@@ -4,16 +4,16 @@
   "description": "Unified notification routing across macOS, push, SMS, and email",
   "type": "module",
   "bin": {
-    "notify": "./dist/cli.js"
+    "notify": "dist/cli.js"
   },
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "dev": "tsc -p tsconfig.build.json --watch",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "lint": "tsc --noEmit"
+    "build": "node_modules/.bin/tsc -p tsconfig.build.json",
+    "dev": "node_modules/.bin/tsc -p tsconfig.build.json --watch",
+    "test": "node_modules/.bin/vitest run",
+    "test:watch": "node_modules/.bin/vitest",
+    "lint": "node_modules/.bin/tsc --noEmit"
   },
   "keywords": [
     "meshvibe",
@@ -23,7 +23,7 @@
   "author": "MeshVibe",
   "license": "MIT",
   "dependencies": {
-    "commander": "^13.1.0"
+    "commander": "^12.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",

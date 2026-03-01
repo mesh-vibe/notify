@@ -57,7 +57,7 @@ program
   .command("test")
   .description("Send a test notification to all channels")
   .action(() => {
-    const results = send("This is a test notification from MeshVibe Notify.", {
+    const results = send("This is a test notification from MeshVibe notify.", {
       title: "MeshVibe Test",
       priority: "critical",
     });
